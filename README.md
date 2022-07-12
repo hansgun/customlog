@@ -5,6 +5,7 @@
 **1. log.py [로그 포맷, 레벨, 디렉터리 지정]**
 - 로그 포맷 class : PaipLogFormatter    
   .``` '%(asctime)s - %(levelname)-10s - %(filename)s - %(funcN    ame)s - %(message)s' ```
+  * ex : ``` 2022-07-08 18:35:49,197 - ERROR      - Calculator - divide - Exception: division by zero ```  
 - get_logger function  
   . 로그 저장 디렉터리 지정 : ```  linux_log_dir = './logs_dir/' ```  
   . 로그 레벨 지정 : default ```logging.ERROR``` 테스트시는 ```logging.DEBUG``` 혹은 ```logging.INFO``` 로 지정하여 진행 
@@ -46,4 +47,11 @@ class Calculator():
         except:
             raise
 
+if __name__ == '__main__':
+    calculator = Calculator(5, 0, 'calculator_file', '')
+    calculator.divide()
+
 ```
+
+```
+
