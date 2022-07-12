@@ -2,14 +2,14 @@
 
 ### 파일 구성 
 
-1. log.py [로그 포맷, 레벨, 디렉터리 지정]
+**1. log.py [로그 포맷, 레벨, 디렉터리 지정]**
 - 로그 포맷 class : PaipLogFormatter    
   .``` '%(asctime)s - %(levelname)-10s - %(filename)s - %(funcN    ame)s - %(message)s' ```
 - get_logger function  
   . 로그 저장 디렉터리 지정 : ```  linux_log_dir = './logs_dir/' ```  
   . 로그 레벨 지정 : default ```logging.ERROR``` 테스트시는 ```logging.DEBUG``` 혹은 ```logging.INFO``` 로 지정하여 진행 
 
-2. paiplog.py [decorator]
+**2. paiplog.py [decorator]**
 
 ### 사용법   
 * paiplog.paiplog , log 를 임포트 한다  
