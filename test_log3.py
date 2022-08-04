@@ -1,5 +1,5 @@
-from paiplog import paiplog
-import log
+from module.paiplog import paiplog
+
 
 @paiplog
 def divide3(a=1,b=0) : 

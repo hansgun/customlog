@@ -12,24 +12,24 @@
 2. paiplog.py [decorator]
 
 ### 사용법   
-* paiplog.paiplog , log 를 임포트 한다  
+* paiplog.paiplog 를 임포트 한다  
 * 적용하고자 하는 function 에 @paiplog decorator 적용  
-* log.py에 지정된 레벨 이상의 로그가 지정된 디렉터리에 지정된 형태로 저장됨   
+* paiplog.py에 지정된 레벨 이상의 로그가 지정된 디렉터리에 지정된 형태로 저장됨   
 
 ##### function 적용 시
+
 ```python
-from paiplog import paiplog
-import log
+from module.paiplog import paiplog
+
 
 @paiplog
-def divide3(a=1,b=0) :
-    return a/b
+def divide3(a=1, b=0):
+  return a / b
 ```
 
 #### class 적용 시
 ```python 
-from paiplog import paiplog
-import log
+from module.paiplog import paiplog
 
 class Calculator():
     def __init__(self, first=0, second=0, log_file_name='', log_file_dir=''):

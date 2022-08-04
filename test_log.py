@@ -1,5 +1,5 @@
-from paiplog import paiplog
-import log
+from module.paiplog import paiplog
+
 
 class Calculator():
     def __init__(self, first=0, second=0, log_file_name='', log_file_dir=''):
